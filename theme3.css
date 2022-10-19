@@ -1,0 +1,21 @@
+:root{
+    /* Theme 1 main colors */
+    --mainBackground: hsl(268, 75%, 9%);
+    --toggleBackground: hsl(268, 71%, 12%);
+    --screenBackground : hsl(268, 71%, 12%);
+    /* Theme 1 keys */
+    /* Del / Rest */
+    --del-keyBackground: hsl(281, 89%, 26%);
+    --del-keyShadow: hsl(285, 91%, 52%);
+    /* equal keys */
+    --equal-keyBackground: hsl(176, 100%, 44%);
+    --equal-keyShadow: hsl(177, 92%, 70%);
+    /* main keys */
+    --main-keyBackground: hsl(268, 47%, 21%);
+    --main-keyShadow: hsl(290, 70%, 36%);
+    /* Text */
+    --textOne: hsl(52, 100%, 62%);
+    --textTwo: hsl(0, 0%, 100%);
+    --screenText : hsl(52, 100%, 62%);
+    --navText : hsl(52, 100%, 62%);
+}

@@ -1,0 +1,189 @@
+:root{
+    --mainFont: 'League Spartan', sans-serif;
+
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--mainFont);
+    background-color: var(--mainBackground);
+ 
+}
+main{
+    margin: 0px;
+    padding: 0px;
+    height: 95vh;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    height: 500px;
+    width: 450px;
+}
+nav{
+    color: var(--navText);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.themeArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.themeArea p{
+    margin-right: 20px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+.themeArea .div{
+    position: relative;
+    padding: 5px;
+    display: flex;
+    background-color: var(--toggleBackground);
+    border-radius: 14px;
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
+    -ms-border-radius: 14px;
+    -o-border-radius: 14px;
+}
+.themeArea .div button{
+    background-color: var(--toggleBackground);
+    border-radius: 10px;
+    margin: 0px;
+    padding: 0px;
+    height: 18px;
+    width: 18px;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.themeArea .div #one::before{
+    font-size: 14px;
+    content: "1";
+    position: absolute;
+    top: -18px;
+    left:9px;
+    color: var(--navText) ;
+}
+.themeArea .div #two::before{
+    font-size: 14px;
+    content: "2";
+    position: absolute;
+    top: -18px;
+    left:27px;
+    color: var(--navText) ;
+}
+.themeArea .div #three::before{
+    font-size: 14px;
+
+    content: "3";
+    position: absolute;
+    top: -18px;
+    left:46px;
+    color: var(--navText) ;
+}
+.themeArea .active{
+    background-color: var(--equal-keyBackground) !important;
+}
+.screen input{
+    text-align: right;
+    font-size: 30px;
+    padding: 0px 30px;
+    color: var(--screenText);
+    width: 450px;
+    height: 70px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: var( --screenBackground);
+}
+.screen input:focus{
+    outline: none;
+}
+.buttons {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 450px;
+    background-color: var(--toggleBackground);
+}
+.buttons button{
+    padding-top: 5px;
+    color: var(--textOne);
+    background-color: var(--main-keyBackground);
+    box-shadow: 0px 4px var(--main-keyShadow);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 7.5px;
+    margin-right: 7.5px;
+    width: 90px;
+    height:50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.buttons button:hover{
+    background-color: var(--textTwo);
+}
+.buttons .del{
+    color: var(--textTwo);
+    background-color: var(--del-keyBackground);
+    box-shadow: 0px 4px var(--del-keyShadow);
+}
+.buttons .del:hover{
+    background-color: var(--mainBackground);
+}
+#rest{
+width: calc(90*2px + 15px) ;
+}
+#equal{
+    color: var(--textTwo);
+    width: calc(90*2px + 15px);
+    background-color: var(--equal-keyBackground);
+    box-shadow: 0px 4px var(--equal-keyShadow);
+}
+#equal:hover{
+    background-color: var(--mainBackground);
+
+}
+footer{
+    display: flex;
+    align-items: flex-end;
+    margin: 0px;
+    padding: 0px;
+    height: 5vh;
+    
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    letter-spacing: 2px;
+    background-color: black;
+    width: 100%;
+}
+
